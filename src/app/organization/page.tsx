@@ -1,0 +1,1 @@
+import {PublicPage} from '@/components/public-pages'; export default async function Page({searchParams}:{searchParams:Promise<{lang?:string}>}){return <PublicPage type="organization" lang={(await searchParams).lang==='en'?'en':'ne'}/>}

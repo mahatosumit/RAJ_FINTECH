@@ -1,0 +1,1 @@
+import {PublicPage} from '@/components/public-pages'; export const dynamic='force-dynamic'; export default async function Page({searchParams}:{searchParams:Promise<{lang?:string}>}){return <PublicPage type="staff" lang={(await searchParams).lang==='en'?'en':'ne'}/>}
